@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 load_dotenv()
 
 # --- Configuration ---
-DEFAULT_KEY = "AIzaSyAKGd3FhUHwxgiAJtCOrs8oAByyEqwGV-g"
+DEFAULT_KEY = "Enter Your GEMINI API KEY HERE"
 API_KEY = os.getenv("GEMINI_API_KEY", DEFAULT_KEY)
 
 if API_KEY:
@@ -380,4 +380,5 @@ with gr.Blocks(theme=theme, css=custom_css, title="EmotiCare AI") as app:
 
 if __name__ == "__main__":
     print("--- EmotiCare UI Updated ---")
+
     app.launch()
